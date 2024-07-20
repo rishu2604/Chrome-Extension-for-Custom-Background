@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Rishu's Extension",
+    "name": "Custom Background",
     "version": "0.1.0",
     "description": "Tutorial extension",
     "icons": {
@@ -11,8 +11,17 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": "./images/icon16.png",
-        "default_title": "Rishu's Extension" 
+        "default_title": "Custom Background" 
     }, 
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "https://www.google.com/*" ],
+            "js": [ "content.js" ]
+        }
+    ], 
     "permissions": [
         "tabs",
         "storage"

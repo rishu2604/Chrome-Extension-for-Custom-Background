@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishu's Extension</title>
-    <!-- <script src="jquery.min.js"></script> -->
     <script src="popup.js" defer></script>  
     <!-- We will be adding our main functionalities in the popup.js -->
     <style>
@@ -16,6 +15,10 @@
 <body>
     <h3>Hi, <span id="name"></span>!</h3>
     <input id="alias" type="text" placeholder="Enter your name" />
-    <button id="button" type="submit">Add name</button>
+    <input id="imgLink" type="url" placeholder="Enter the URL of the image" />
+    <div style="display: flex;">
+        <button id="addNameButton" type="submit">Add name</button>
+        <button id="changeBgButton" type="submit">Change Background</button>
+    </div>
 </body>
 </html>

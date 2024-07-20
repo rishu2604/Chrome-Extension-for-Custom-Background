@@ -19,7 +19,8 @@
         "default_title": "Rishu's Extension" // it will be show when you will hover over the icon
     }, // These are some default browser actions
     "permissions": [
-        "tabs" // This basically means, I need this extension to be visible or displayed on every tab
+        "tabs", // This basically means, I need this extension to be visible or displayed on every tab
+        "storage" // This is the memory which is used or accessed by the chrome browser
     ] // It is an array
 }
 ```
